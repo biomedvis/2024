@@ -14,6 +14,9 @@ main:
   - name: "Contact"
     url: "/contact/"
     weight: 5
+  - name: "Youtube Channel"
+    url: "https://www.youtube.com/@biomedvis_platform"
+    weight: 6
 
 footer:
   - name: "Home"
@@ -25,3 +28,9 @@ footer:
   - name: "Contact"
     url: "/contact/"
     weight: 3
+  - name: "Previous Events"
+    url: "announcements/previous-events/"
+    weight: 6  
+  - name: "Youtube Channel"
+    url: "https://www.youtube.com/@biomedvis_platform"
+    weight: 6

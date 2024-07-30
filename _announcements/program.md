@@ -5,6 +5,6 @@ featured: true
 school: true
 weight: 3
 layout: program
-description: Here you can find the preliminary program of the Summer School.
+description: Here you can find the preliminary program for this year.
 link: /2024/announcements/program/
 ---
