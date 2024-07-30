@@ -11,7 +11,7 @@ promoted: true
 ---
 
 
-Associate Professor, at Linköping University, Sweden. 
+Associate Professor at Linköping University, Sweden. 
 
 
 Research Interests: Intersection between visualization and machine learning.

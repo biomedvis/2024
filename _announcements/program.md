@@ -1,10 +1,10 @@
 ---
 title: Summer School Program
-date: 2023-07-31
+date: 2024-07-30
 featured: true
 school: true
 weight: 3
 layout: program
 description: Here you can find the preliminary program of the Summer School.
-link: /2023/announcements/program/
+link: /2024/announcements/program/
 ---

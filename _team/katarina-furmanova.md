@@ -2,7 +2,7 @@
 title: "Katarína Furmanová"
 date: 2020-02-10
 draft: false
-image: "images/team/katarina_furmanova.jpg"
+image: "images/team/katarina-furmanova.jpg"
 jobtitle: "Organization Committee"
 weburl: "https://www.muni.cz/en/people/374538-katarina-furmanova"
 weight: 2

@@ -8,24 +8,24 @@ intro_image_hide_on_mobile: true
 
 # Summer School
 
-We announce the third Summer School on Biological and Medical Visualization: the **Bio+Med+Vis Summer School**!
+We announce the fourth Summer School on Biological and Medical Visualization: the **Bio+Med+Vis Summer School**!
 
-The Summer School will be held on **September 19--20, 2023** in **Norrköping, Sweden**. The event is collocated with [EG VCBM conference](https://conferences.eg.org/vcbm2023/), which will be held on September 20--22 in Norrköping, Sweden. Participants can anticipate excellent **talks** and **tutorials**, given by experts in Biological and Medical Visualization. 
+The Summer School will be held on **September 17, 2024 in Magdeburg, Germany**. The event is collocated with the EG VCBM conference, which will be held on September 19-20 in Magdeburg, Germany. Participants can anticipate excellent **talks**, given by experts in Biological and Medical Visualization.
 
 The Summer School is primarily targeting M.Sc. and Ph.D. students in Computer Science, but anyone who wants to learn more about principles and challenges in visualization for Life Sciences applications is welcome! No preliminary knowledge of Bio+Medical visualization is necessary.
 
-The registration for the Summer School is **free of charge** and it will provide access to an educational platform, where all materials will be available afterward. To join us, just fill in the [registration form](https://conferences.eg.org/vcbm2023/information-for-attendees/registration/). Note that you can attend only the Summer School if you do not wish to attend VCBM which charges additional fees.
+The registration for the Summer School is **free of charge** and it will provide access to an educational platform, where all materials will be available afterward. To join us, just fill in the [registration form](https://www.conftool.org/vcbm2024/). Note that you can attend only the Summer School if you do not wish to attend VCBM which charges additional fees.
 
 We are looking forward to seeing you at the Bio+Med+Vis Summer School! 
 
 [The Organization Team](https://biomedvis.github.io/team/): 
-Jan Byška, Katarína Furmanová, Ingrid Hotz, Daniel Jönsson, Barbora Kozlíková, Renata Raidou
+Jan Byška, Katarína Furmanová, Ingrid Hotz, Daniel Jönsson, Barbora Kozlíková, Monique Meuschke, Bernhard Preim, Renata Raidou
 
 
 This event is endorsed by:
 
 <a href="http://vcbm.org/" target="_blank">
-![EG](/2023/images/endorsement/eg.png)
+![EG](/2024/images/endorsement/eg.png)
 </a>
 
 <!--

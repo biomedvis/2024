@@ -9,7 +9,7 @@ main:
     url: "/team/"
     weight: 3
   - name: "Registration"
-    url: "https://conferences.eg.org/vcbm2023/information-for-attendees/registration/"
+    url: "https://www.conftool.org/vcbm2024/"
     weight: 4
   - name: "Contact"
     url: "/contact/"
@@ -20,7 +20,7 @@ footer:
     url: "/"
     weight: 1
   - name: "Registration"
-    url: "https://conferences.eg.org/vcbm2023/information-for-attendees/registration/"
+    url: "https://www.conftool.org/vcbm2024/"
     weight: 2  
   - name: "Contact"
     url: "/contact/"

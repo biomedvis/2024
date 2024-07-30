@@ -112,10 +112,8 @@ layout: default
     <div class="col-12">
       <div class="service service-single">
         <h1 class="title">{{page.title}}</h1>
-		<!-- Preliminary program outline. Actual speakers are currently negotiated and we will add names and topics soon. -->
-		All VCBM sessions take place in the lecture hall <a href="https://link.mazemap.com/vEkJ9RtE">K1</a> in the Kåkenhus building if not noted otherwise. Registration and coffee breaks are located in front of the lecture hall. 
-		The Bio+Med+Vis Summer School happens in room <a href="https://link.mazemap.com/JJa2KBAy">KO301</a> in <a href="https://link.mazemap.com/JJa2KBAy">Kopparhammaren 2</a> on the opposite side of the river.
-		<br/><br/>
+		More information coming soon!
+		<!--<br/><br/>
 		<div class="content">	
 			{{content}}
 			<div class="table-responsive">
@@ -131,7 +129,7 @@ layout: default
 					</th>
 				</tr>	
 				<!-- generate program based on the 5min intervals -->
-				{% assign slot_size_min = 5 %}
+				<!--{% assign slot_size_min = 5 %}
 				{% for hour in (9..17) %}
 					{% if hour < 10 %}
 						{% assign hour_text = '0' | append : hour %}
@@ -158,13 +156,13 @@ layout: default
 						{% assign slot_text = hour_text | append: ':' | append : minutes_text | append: ' - ' | append: hour_text_next | append: ':' | append : minutes_text_next  %}
 						
 						<!-- creates line in the program for each interval -->
-						<tr>					
+						<!--<tr>					
 							{% for day_in_week in days%}
 								{% assign data = site.data.program | where: "day", day_in_week | where: "start", start_time %}
 								{% if data.size > 0 %}			
 									{% assign speaker = data[0] %}									
 									<!-- computes the number of slots the lecture will take -->
-									{% assign time_start = speaker.start | split : ":" %}
+									<!--{% assign time_start = speaker.start | split : ":" %}
 									{% assign time_end = speaker.end | split : ":" %}
 									{% assign hours = time_end[0] | minus : time_start[0] %}
 									{% assign minutes = time_end[1] | minus : time_start[1] %}
@@ -177,7 +175,7 @@ layout: default
 									{% endif %}
 								
 									<!-- generates the lecture slot by merging multiple smaller slots -->
-									<td rowspan={{lenght}} style="height:{{lenght | times : 10}}px">
+									<!--<td rowspan={{lenght}} style="height:{{lenght | times : 10}}px">
 										<div class="talk-content" style="background-image: url({{ "/images/program/" | relative_url }}{{speaker.icon}});"> 
 											<div class="spaker-info">
 												<div class="title">{{speaker.title}}</div> 
@@ -196,10 +194,10 @@ layout: default
 				<!--<div class="legend">
 					<img src = "{{ "/images/program/legend.png" | relative_url }}" />
 				</div>-->
-			</div>
+			<!--</div>
 			
 			<!-- the detailed program -->
-			<div class="program" id="speakers">
+			<!--<div class="program" id="speakers">
 			{% for day_in_week in days%}
 				{% assign data = site.data.program | where: "day", day_in_week | sort: "start" %}
 				{% for speaker in data %}
@@ -238,8 +236,7 @@ layout: default
 				{% endfor %}
 			{% endfor %}	
 			</div>
-			
-		</div>
+		</div>-->
       </div>
     </div>
   </div>
