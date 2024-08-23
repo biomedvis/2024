@@ -89,12 +89,23 @@ layout: default
 	text-align:top;
 }
 .program .speaker .details .photo{
-	width: 100px;
 	float: left;
 	margin: 0px;
+	padding: 0px;
+}
+.program .speaker .details .photo img{
+	width: 120px;
+	margin: 0px;
+}
+.program .speaker .details .photoinfo{
+	font-size:8pt;
+	margin: 0px;
+	padding: 0px;
+	margin-top:5px;
+	display:block;
 }
 .program .speaker .details .bio{
-	margin-left:100px;
+	margin-left:110px;
 	padding-left:25px;
 }
 .program .speaker .details .bio-no-photo{
@@ -219,7 +230,10 @@ layout: default
 						{% if speaker.bio %}
 						<div class="details">
 							{% if speaker.photo %}
-							<img class="photo" src="{{ "/images/speakers/" | relative_url }}{{ speaker.photo }}" atl="{{ speaker.name }}" />
+							<div class="photo">
+								<img src="{{ "/images/speakers/" | relative_url }}{{ speaker.photo }}" atl="{{ speaker.name }}" />
+								{% if speaker.photoinfo %} <span class="photoinfo">{{ speaker.photoinfo }}</p> {% endif %}
+							</div>
 							<div class="bio">{{ speaker.bio }}</div>
 							{% else %}
 							<div class="bio-no-photo">{{ speaker.bio }}</div>
