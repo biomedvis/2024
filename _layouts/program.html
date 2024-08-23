@@ -97,6 +97,8 @@ layout: default
 	margin-left:100px;
 	padding-left:25px;
 }
+.program .speaker .details .bio-no-photo{
+}
 .program .video{
 	padding-top:10px;
 	text-align:center;
@@ -104,7 +106,7 @@ layout: default
 </style>
 
 <!-- assign the list of days in the week -->
-{% assign days = "Tuesday,Wednesday" | split : "," %}
+{% assign days = "Tuesday" | split : "," %}
 
 <!-- sorts the program based on date and time -->
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
@@ -112,7 +114,7 @@ layout: default
     <div class="col-12">
       <div class="service service-single">
         <h1 class="title">{{page.title}}</h1>
-		More information coming soon!
+		<h2>The preliminary list of speakers.</h2>
 		<!--<br/><br/>
 		<div class="content">	
 			{{content}}
@@ -197,7 +199,7 @@ layout: default
 			<!--</div>
 			
 			<!-- the detailed program -->
-			<!--<div class="program" id="speakers">
+			<div class="program" id="speakers">
 			{% for day_in_week in days%}
 				{% assign data = site.data.program | where: "day", day_in_week | sort: "start" %}
 				{% for speaker in data %}
@@ -207,17 +209,31 @@ layout: default
 					{% if speaker.name != nil or speaker.title != nil %}
 					<div class="speaker" id="{{speaker.name}}">
 						<div class="first-line">
-							<span class="slot">{{ speaker.start }} - {{ speaker.end }}</span>
+							<!--<span class="slot">{{ speaker.start }} - {{ speaker.end }}</span>-->
 							<span class="title">{{ speaker.title }}</span><br/>
 						</div>
 						{% if speaker.name %} 
-						<div class="name">Speaker: {{ speaker.name }} {% if speaker.affiliation %}({{ speaker.affiliation }}){% endif%}</div>
+						<div class="name">Speaker: {{ speaker.name }} {% if speaker.name2 %} & {{ speaker.name2 }}{% endif%} {% if speaker.affiliation %}({{ speaker.affiliation }}){% endif%}</div>
 						{% endif %}
 						
-						{% if speaker.bio and speaker.photo %}
+						{% if speaker.bio %}
 						<div class="details">
+							{% if speaker.photo %}
 							<img class="photo" src="{{ "/images/speakers/" | relative_url }}{{ speaker.photo }}" atl="{{ speaker.name }}" />
 							<div class="bio">{{ speaker.bio }}</div>
+							{% else %}
+							<div class="bio-no-photo">{{ speaker.bio }}</div>
+							{% endif %}
+						</div>
+						{% endif %}
+						
+						{% if speaker.bio2 %}
+						<div class="details" style="padding-top:10px;">
+							{% if speaker.photo2 %}
+							<img class="photo" src="{{ "/images/speakers/" | relative_url }}{{ speaker.photo2 }}" atl="{{ speaker.name2 }}" />
+							{% else %}
+							<div class="bio-no-photo">{{ speaker.bio2 }}</div>
+							{% endif %}
 						</div>
 						{% endif %}
 
@@ -236,7 +252,7 @@ layout: default
 				{% endfor %}
 			{% endfor %}	
 			</div>
-		</div>-->
+		</div>
       </div>
     </div>
   </div>
