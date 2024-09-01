@@ -211,7 +211,7 @@ layout: default
 				{% assign data = site.data.program | where: "day", day_in_week | sort: "start" %}
 				{% for speaker in data %}
 					{% if forloop.first %}
-					<div class="day">{{ day_in_week }}</div>
+					<!--<div class="day">{{ day_in_week }}</div>-->
 					{% endif %}
 					{% if speaker.name != nil or speaker.title != nil %}
 					<div class="speaker" id="{{speaker.name}}">
