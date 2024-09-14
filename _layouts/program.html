@@ -58,6 +58,9 @@ layout: default
 .table-program .title{
 	font-size:18px;
 }
+.table-program .room{
+	font-size:12px;
+}
 .content .legend{
 	text-align:center;
 	width:100%;
@@ -81,6 +84,10 @@ layout: default
 	font-weight: bold;
 }
 .program .speaker .name{
+	font-weight: bold;
+}
+.program .speaker .room{
+	%font-size:12px;
 	margin-bottom:10px;
 	font-weight: bold;
 }
@@ -140,7 +147,7 @@ layout: default
 				</tr>	
 				<!-- generate program based on the 5min intervals -->
 				{% assign slot_size_min = 5 %}
-				{% for hour in (9..18) %}
+				{% for hour in (8..18) %}
 					{% if hour < 10 %}
 						{% assign hour_text = '0' | append : hour %}
 					{% else %}
@@ -192,6 +199,9 @@ layout: default
 												<div class="speaker">
 													<a href="#{{speaker.name}}">{{speaker.name}} {% if speaker.name2 %} & {{ speaker.name2 }}{% endif%}</a>
 												</div>
+												{% if speaker.room %}
+												<div class="room">(room: {{speaker.room}})</div>
+												{% endif%}
 											</div>
 										</div>
 									</td>
@@ -223,6 +233,9 @@ layout: default
 						{% if speaker.name %} 
 						<div class="name">Speaker: {{ speaker.name }} {% if speaker.name2 %} & {{ speaker.name2 }}{% endif%} {% if speaker.affiliation %}({{ speaker.affiliation }}){% endif%}</div>
 						{% endif %}
+						{% if speaker.room %}
+						<div class="room">Room: {{speaker.room}}</div>
+						{% endif%}
 						
 						{% if speaker.bio %}
 						<div class="details">
